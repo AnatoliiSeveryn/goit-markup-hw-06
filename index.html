@@ -437,35 +437,38 @@
                     </li>
                 </ul>
             </div>
+            <!--subscription-->
             <div class="subscription-container">
-            <form action="#" class="subscription" >
-                <b class="subscription-text">Подпишитесь на рассылку</b>
-                 <label class="modal-form-field">
-                   <input type="subscription" name="user-subscription" class="subscription-input" placeholder="E-mail" required />
-                   <button type="submit" class="subscription-btn">Подписаться
-                       <svg class="subscription-icon" width="24px" height="24px">
-                    <use href="./images/sprite.svg/symbol-defs.svg#icon-send">
-                    </use>
-                   </button> 
-                </label>
-            </form>
-        </div>
+                <b class="subscription-title">Подпишитесь на рассылку</b>
+                <form action="#" class="subscription-form">
+                    <input type="email" name="email-user" class="subscription-input" placeholder="E-mail" required
+                        title="example@gmail.com" />
+                    <button type="submit" class="subscription-btn">Подписаться
+                        <!-- <svg class="subscription-icon" width="24px" height="24px">
+                            <use href="./images/sprite.svg/symbol-defs.svg#icon-send">
+                            </use>
+                        </svg> -->
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="model-close-btn" data-modal-close>
-                <svg class="model-close-icon" width="11px" height="11px">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="11px" height="11px">
                     <use href="./images/sprite.svg/symbol-defs.svg#icon-close">
                     </use>
+                </svg>
             </button>
             <form action="#" class="modal-form">
                 <b class="modal-form-text">Оставьте свои данные, мы вам перезвоним</b>
                 <label class="modal-form-field">
                     Имя
                     <span class="modal-form-input-wrapper">
-                        <input type="text" name="user-name" class="modal-form-input" required minlength="5" />
+                        <input type="text" name="user-name" class="modal-form-input" required minlength="5"
+                            title="First name, Last name" />
                         <svg class="modal-form-icon" width="12px" height="12px">
                             <use href="./images/sprite.svg/symbol-defs.svg#icon-name"></use>
                         </svg>
@@ -484,7 +487,7 @@
                 <label class="modal-form-field">
                     Почта
                     <span class="modal-form-input-wrapper">
-                        <input type="email" name="email" class="modal-form-input" required />
+                        <input type="email" name="email" class="modal-form-input" required title="example@gmail.com" />
                         <svg class="modal-form-icon" width="15px" height="12px">
                             <use href="./images/sprite.svg/symbol-defs.svg#icon-email"></use>
                         </svg>
